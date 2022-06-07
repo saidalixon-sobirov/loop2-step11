@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #de8a89;
+  --gray: #ecb9b8;
+  --gray-hover: #fbcbcb;
+  --white: #ffffff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #de8a89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 1100px;
+}
+
+.title {
+  margin-left: 100px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+ul li {
+  margin-right: 50px;
+}
+
+ul li a {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 3.8rem;
+  font-weight: 700;
+  transition: 0.15s;
+}
+
+ul li:first-child a {
+  color: var(--white);
+}
+
+ul li:not(.active) a:hover {
+  color: var(--gray-hover);
+}
+
+.title-info {
+  font-size: 18px;
+  color: var(--white);
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.arrow:hover {
+  background-color: var(--gray-hover);
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3.4em;
+}
+
+.box:nth-child(1) {
+  background: #3e3c3d;
+}
+
+.box:nth-child(2) {
+  background: #353334;
+}
+
+.box:nth-child(3) {
+  background: #131313;
+}
+
+.option-name {
+  color: var(--pink);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.option {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.start-btn {
+  position: absolute;
+  background-color: #131313;
+  color: var(--white);
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px 100px;
+  border-radius: 4px;
+  left: 25px;
+  bottom: -20px;
+  font-weight: 500;
+  transition: 0.15s;
+}
+
+.start-btn:hover {
+  transform: translateY(-5px);
+}
